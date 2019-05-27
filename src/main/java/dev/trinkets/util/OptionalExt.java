@@ -10,14 +10,18 @@ import java.util.Objects;
 import java.util.Optional;
 
 /**
+ * <p>
  * Supplemental to changes in {@link dev.trinkets.util.function}
+ * </p>
  *
- * To eliminate the need for this class:
- *	1. Change method(s) tagged {@link dev.trinkets.doc.Update}
+ * <p>
+ * To eliminate the need for this class:<br>
+ *	1. Change method(s) tagged {@link dev.trinkets.doc.Update}<br>
+ * </p>
  *
  * @see dev.trinkets.util.function.ConsumerExt
  */
-@SecondaryRequirement(causedBy = { ConsumerExt.class, FunctionExt.class, PredicateExt.class })
+@SecondaryRequirement(causedBy = { ConsumerExt.class, FunctionExt.class, PredicateExt.class, SupplierExt.class })
 public class OptionalExt<T> {
 
 	public static <T> OptionalExt<T> of(Optional<T> opt) {
