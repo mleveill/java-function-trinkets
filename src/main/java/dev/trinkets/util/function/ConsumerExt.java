@@ -6,6 +6,9 @@ import java.util.function.Consumer;
 
 /**
  * <p>
+ * Changes for {@link java.util.function.Consumer}
+ * </p>
+ * <p>
  * Why:<br>
  *	1. If a Consumer lambda throws a checked exceptions, the developer has to
  *		messily wrap it in a RuntimeException.<br>
@@ -21,8 +24,8 @@ import java.util.function.Consumer;
  * </p>
  * <p>
  * Risk:<br>
- *	1. Maintain source compatibility because the E parameter can be omitted.<br>
- *	2. Maintain binary compatibility because generic types are erased.<br>
+ *	1. Maintains source compatibility because the E parameter can be omitted.<br>
+ *	2. Maintains binary compatibility because generic types are erased.<br>
  *	3. Impact on code using Reflection APIs should be minimal.<br>
  *  </p>
  */
