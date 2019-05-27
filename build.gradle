@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+description = 'Utilities to fill gaps in the Java standard libraries'
+group = 'dev.trinkets'
+// artifactId = 'java-function-trinkets'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
