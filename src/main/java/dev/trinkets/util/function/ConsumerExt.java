@@ -15,7 +15,7 @@ import java.util.function.Consumer;
  *
  * To eliminate the need for this class:
  *	1. Java should support default values for generic parameters.
- *	2. Modify java.util.function.Consumer<T> to Consumer<T, E extends Throwable = Throwable>
+ *	2. Modify {@code java.util.function.Consumer<T>} to  {@code Consumer<T, E extends Throwable = Throwable>}
  *
  * Risk:
  *	1. Maintain source compatibility because the E parameter can be omitted.
